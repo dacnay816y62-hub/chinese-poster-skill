@@ -1,0 +1,11 @@
+interface:
+  display_name: Chinese Style Poster Skill
+  short_description: Create refined contemporary Chinese-style poster directions and prompts
+  default_prompt: Use $chinese-style-poster-skill to design a contemporary Chinese-style poster direction and generation prompt.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "01",
+    "theme": "冷萃乌龙茶饮品牌发布",
+    "title": "冷山",
+    "archetype": "D05 Commercial Cultural Ad",
+    "preset": "F09 瘦劲 · 清雅",
+    "layout": "L02 横向题字型",
+    "palette": "ice white, oolong green, graphite, translucent bottle blue",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-01.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: cold-brew oolong tea beverage brand launch / 冷萃乌龙茶饮品牌发布. Direction archetype: D05 Commercial Cultural Ad. Main title: \"冷山\". Calligraphy preset: F09 thin elegant elongated strokes, sparse and premium. Layout preset: L02 horizontal title lockup in the upper field, product-like hero without showing a real brand. Translate the subject into abstract graphic elements: cold translucent tea column, oolong leaf contour, mountain-cold mist plane, condensation dots, one confident graphite information strip. Use clear commercial campaign hierarchy, generous negative space, refined Chinese typography, small English annotation \"COLD BREW OOLONG\", restrained seal, premium matte paper and glass texture. Palette: ice white, oolong green, graphite, translucent bottle blue. Avoid generic milk tea poster, cheap beverage stickers, crowded selling points, excessive beige, tourist tea imagery."
+  },
+  {
+    "id": "02",
+    "theme": "新中式香氛发布",
+    "title": "夜檀",
+    "archetype": "D07 Dark Contemporary Oriental",
+    "preset": "F09 瘦劲 · 清雅",
+    "layout": "L11 超大标题 + 微型信息型",
+    "palette": "lacquer black, sandalwood brown, bone white, muted teal smoke",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-02.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: contemporary Chinese fragrance launch / 新中式香氛发布. Direction archetype: D07 Dark Contemporary Oriental. Main title: \"夜檀\". Calligraphy preset: F09 thin elegant elongated strokes, quiet but sharp. Layout preset: L11 oversized title plus micro information, luxury campaign cover feeling. Translate the subject into abstract graphic elements: black lacquer field, sandalwood grain close crop, vertical smoke thread, tiny teal mineral glow, a minimal bottle silhouette implied by negative space. Use high contrast, clear visual hierarchy, refined Chinese typography, small English annotation \"NIGHT SANDALWOOD\", restrained seal, premium dark paper texture. Palette: lacquer black, sandalwood brown, bone white, muted teal smoke. Avoid perfume ad cliches, gold luxury excess, incense altar scene, template beige paper."
+  },
+  {
+    "id": "03",
+    "theme": "国潮电子音乐节",
+    "title": "声浪",
+    "archetype": "D06 Festival Kinetic",
+    "preset": "F06 草书 · 狂放",
+    "layout": "L07 满版书法型",
+    "palette": "ink black, electric cyan, cinnabar pulse, smoke gray",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-03.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Chinese electronic music festival / 国潮电子音乐节. Direction archetype: D06 Festival Kinetic. Main title: \"声浪\". Calligraphy preset: F06 wild cursive with flying-white motion, strong but controlled. Layout preset: L07 full-page calligraphy where title becomes the sound-wave graphic. Translate the subject into abstract graphic elements: ink-stroke waveform, drumbeat pulse dots, electric cyan scan lines, cinnabar signal slash, smoky stage depth. Use kinetic diagonal force, clear hierarchy, refined Chinese typography, small English annotation \"ELECTRONIC WAVE\", restrained seal as signal mark, premium print texture. Palette: ink black, electric cyan, cinnabar pulse, smoke gray. Avoid nightclub flyer clutter, cheap neon overload, cartoon dragons, unreadable messy typography."
+  },
+  {
+    "id": "04",
+    "theme": "赛博山水数据展",
+    "title": "山码",
+    "archetype": "D17 Digital Neo-Oriental",
+    "preset": "F10 当代手写 · 实验",
+    "layout": "L10 非对称实验型",
+    "palette": "deep graphite, mineral green, neon teal, data white",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-04.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: cyber landscape data exhibition / 赛博山水数据展. Direction archetype: D17 Digital Neo-Oriental. Main title: \"山码\". Calligraphy preset: F10 contemporary handwritten experimental, stretched strokes, slight digital misregistration. Layout preset: L10 asymmetric experimental composition with cropped title and interface grid. Translate the subject into abstract graphic elements: mountain contour as data lines, scan-grid terraces, mineral green digital fog, neon teal coordinate ticks, fragmented ink pixels. Use strong contemporary design, clear visual hierarchy, refined Chinese typography, small English annotation \"LANDSCAPE DATA\", restrained seal reinterpreted as QR-like mark. Palette: deep graphite, mineral green, neon teal, data white. Avoid generic sci-fi UI, tourist landscape, excessive cyberpunk clutter, decorative calligraphy template."
+  },
+  {
+    "id": "05",
+    "theme": "城市夜跑文化活动",
+    "title": "夜行",
+    "archetype": "D13 Urban Night / Street Culture",
+    "preset": "F05 行书 · 洒脱",
+    "layout": "L10 非对称实验型",
+    "palette": "wet asphalt black, sodium amber, rain blue, reflective white",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-05.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: urban night running cultural event / 城市夜跑文化活动. Direction archetype: D13 Urban Night / Street Culture. Main title: \"夜行\". Calligraphy preset: F05 flowing running script, fast and breathable. Layout preset: L10 asymmetric experimental composition with title crossing a street-light field. Translate the subject into abstract graphic elements: rain-wet street reflections, running path curve, old alley brick texture, lantern-amber light streaks, tiny route coordinates. Use city energy with Oriental restraint, clear hierarchy, refined Chinese typography, small English annotation \"NIGHT RUN\", minimal event information. Palette: wet asphalt black, sodium amber, rain blue, reflective white. Avoid generic sports poster, sneaker ad cliches, crowded sponsor blocks, nostalgic tourist alley."
+  },
+  {
+    "id": "06",
+    "theme": "青铜器声音实验展",
+    "title": "金声",
+    "archetype": "D03 Material Macro",
+    "preset": "F08 篆意 · 古朴",
+    "layout": "L12 图形主导型",
+    "palette": "bronze green, oxidized black, muted gold, bone white",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-06.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: bronze vessel sound experiment exhibition / 青铜器声音实验展. Direction archetype: D03 Material Macro. Main title: \"金声\". Calligraphy preset: F08 seal-inspired ancient graphic strokes, mysterious and pictographic. Layout preset: L12 graphic-led composition where bronze patina macro texture dominates. Translate the subject into abstract graphic elements: bronze oxidation grain, circular resonance rings, ritual vessel silhouette edge, rubbed inscription fragments, muted gold vibration lines. Use tactile macro crop, clear hierarchy, refined Chinese typography, small English annotation \"BRONZE RESONANCE\", restrained seal. Palette: bronze green, oxidized black, muted gold, bone white. Avoid museum vitrine literalism, excessive shiny gold, fake antique dirt, generic dragon pattern."
+  },
+  {
+    "id": "07",
+    "theme": "丝绸面料时装周",
+    "title": "流缎",
+    "archetype": "D12 Textile / Pattern System",
+    "preset": "F10 当代手写 · 实验",
+    "layout": "L05 现代分栏型",
+    "palette": "silk pearl, ink violet, warm skin beige, cinnabar thread",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-07.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: silk textile fashion week / 丝绸面料时装周. Direction archetype: D12 Textile / Pattern System. Main title: \"流缎\". Calligraphy preset: F10 contemporary handwritten experimental, elongated fashion-title strokes. Layout preset: L05 modern editorial columns with fabric swatches and runway-like vertical rhythm. Translate the subject into abstract graphic elements: silk folds as liquid vertical fields, jacquard pattern fragments, fine cinnabar thread, pearl sheen, asymmetric fashion grid. Use polished fashion campaign finish, clear hierarchy, refined Chinese typography, small English annotation \"SILK WEEK\", restrained seal. Palette: silk pearl, ink violet, warm skin beige, cinnabar thread. Avoid costume drama look, floral overload, luxury gold cliches, generic clothing illustration."
+  },
+  {
+    "id": "08",
+    "theme": "火锅季节品牌海报",
+    "title": "沸红",
+    "archetype": "D09 Color-Field Editorial",
+    "preset": "F06 草书 · 狂放",
+    "layout": "L04 窗格 / 园林框景型",
+    "palette": "chili red, broth cream, carbon black, Sichuan pepper green",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-08.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: hotpot seasonal brand poster / 火锅季节品牌海报. Direction archetype: D09 Color-Field Editorial. Main title: \"沸红\". Calligraphy preset: F06 bold cursive, steam and boiling motion, readable impact. Layout preset: L04 framed-view composition, table geometry and window-like grid form a refined dining space. Translate the subject into abstract graphic elements: large chili-red broth color field, circular pot rim, steam arcs, pepper-dot pattern, black chopstick-like diagonals. Use appetizing but premium commercial hierarchy, refined Chinese typography, small English annotation \"BOILING RED\", restrained seal. Palette: chili red, broth cream, carbon black, Sichuan pepper green. Avoid cheap restaurant menu style, ingredient pile, cartoon fire, excessive folk decoration."
+  },
+  {
+    "id": "09",
+    "theme": "铁路旧站文化市集",
+    "title": "站台",
+    "archetype": "D10 Route / Map / Data",
+    "preset": "F01 魏碑 · 雄浑",
+    "layout": "L18 Public Event System",
+    "palette": "railway green, ticket beige, iron gray, signal red",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-09.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: old railway station cultural market / 铁路旧站文化市集. Direction archetype: D18 Public Event System with D10 route-map logic. Main title: \"站台\". Calligraphy preset: F01 Wei tablet, structural and industrial. Layout preset: public event system poster with modular schedule blocks, ticket-strip information, and route grid. Translate the subject into abstract graphic elements: rail parallel lines, platform canopy rhythm, old ticket perforation, signal-red dot, station coordinates. Use signage-like clarity, contemporary editorial hierarchy, refined Chinese typography, small English annotation \"RAILWAY MARKET\", restrained seal. Palette: railway green, ticket beige, iron gray, signal red. Avoid nostalgic railway postcard, cluttered flea market illustration, fake vintage dirt, tourist signage."
+  },
+  {
+    "id": "10",
+    "theme": "水墨电竞邀请赛",
+    "title": "开局",
+    "archetype": "D17 Digital Neo-Oriental",
+    "preset": "F06 草书 · 狂放",
+    "layout": "L04 Typography Campaign",
+    "palette": "void black, ink white, neon red, interface blue",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-10.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: ink-inspired esports invitational / 水墨电竞邀请赛. Direction archetype: D17 Digital Neo-Oriental and D04 Typography Campaign. Main title: \"开局\". Calligraphy preset: F06 wild cursive with decisive strike energy, title as main campaign graphic. Layout preset: typography campaign with bold cropped title, HUD-like micro text, asymmetric grid. Translate the subject into abstract graphic elements: ink slash as game-start gesture, interface-blue targeting grid, neon-red cursor mark, black void arena, tiny match bracket lines. Use high contrast, polished event poster hierarchy, refined Chinese typography, small English annotation \"OPENING MOVE\". Palette: void black, ink white, neon red, interface blue. Avoid generic gamer neon clutter, weapons, dragons, unreadable brush chaos, cheap tournament flyer."
+  },
+  {
+    "id": "11",
+    "theme": "玻璃茶室建筑展",
+    "title": "透园",
+    "archetype": "D02 Architectural System",
+    "preset": "F04 行楷 · 文人",
+    "layout": "L04 窗格 / 园林框景型",
+    "palette": "glass green, concrete gray, garden white, ink black",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-11.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: glass tea room architecture exhibition / 玻璃茶室建筑展. Direction archetype: D02 Architectural System. Main title: \"透园\". Calligraphy preset: F04 literati semi-cursive, architectural calm. Layout preset: L04 framed-view composition using section lines, glass frames, and garden apertures. Translate the subject into abstract graphic elements: transparent glass planes, tea-room section drawing, garden window reflection, concrete-gray base, black axis line. Use architectural presentation clarity, generous negative space, refined Chinese typography, small English annotation \"GLASS TEA ROOM\", restrained seal. Palette: glass green, concrete gray, garden white, ink black. Avoid real-estate brochure look, generic Zen spa, bamboo-lotus decoration, over-minimal blankness."
+  },
+  {
+    "id": "12",
+    "theme": "湖笔工坊开放日",
+    "title": "笔路",
+    "archetype": "D11 Workshop Process",
+    "preset": "F07 枯笔 · 苍劲",
+    "layout": "L06 拼贴档案型",
+    "palette": "bristle gray, wood brown, ink black, paper white",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-12.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Huzhou brush workshop open day / 湖笔工坊开放日. Direction archetype: D11 Workshop Process. Main title: \"笔路\". Calligraphy preset: F07 dry brush, fiber edge, tactile and process-driven. Layout preset: L06 collage archive with tool fragments, process labels, and material samples. Translate the subject into abstract graphic elements: brush bristle close crop, bamboo handle line, ink absorption marks, trimming guide, workshop numbering. Use process-documentary refinement, clear hierarchy, refined Chinese typography, small English annotation \"BRUSH WORKSHOP\", restrained seal. Palette: bristle gray, wood brown, ink black, paper white. Avoid calligraphy school poster, excessive ink splashes, dirty craft nostalgia, tool pile clutter."
+  },
+  {
+    "id": "13",
+    "theme": "蓝印花布潮流联名",
+    "title": "蓝样",
+    "archetype": "D12 Textile / Pattern System",
+    "preset": "F10 当代手写 · 实验",
+    "layout": "L09 左右对景型",
+    "palette": "indigo, bleach white, denim black, pop lime accent",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-13.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: blue calico contemporary fashion collaboration / 蓝印花布潮流联名. Direction archetype: D12 Textile / Pattern System. Main title: \"蓝样\". Calligraphy preset: F10 contemporary handwritten experimental, young brand feeling. Layout preset: L09 left-right facing composition, one side bold textile pattern block, one side type and campaign info. Translate the subject into abstract graphic elements: indigo resist-dye pattern, stencil repeat, fabric edge, denim-black block, one pop-lime contemporary accent. Use modern brand campaign hierarchy, refined Chinese typography, small English annotation \"INDIGO COLLAB\", restrained seal. Palette: indigo, bleach white, denim black, pop lime accent. Avoid folk costume poster, overtraditional floral pattern, cheap streetwear flyer, template beige paper."
+  },
+  {
+    "id": "14",
+    "theme": "城市水系公共艺术节",
+    "title": "流域",
+    "archetype": "D18 Public Event System",
+    "preset": "F05 行书 · 洒脱",
+    "layout": "L05 现代分栏型",
+    "palette": "river cyan, civic gray, white, safety orange",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-14.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: urban water-system public art festival / 城市水系公共艺术节. Direction archetype: D18 Public Event System. Main title: \"流域\". Calligraphy preset: F05 flowing running script, water-route motion. Layout preset: L05 modern column layout with modular event blocks and civic wayfinding rhythm. Translate the subject into abstract graphic elements: river network lines, bridge nodes, public-art installation marks, safety-orange route pin, civic-gray map grid. Use clear public-event information system, contemporary editorial composition, refined Chinese typography, small English annotation \"WATER PUBLIC ART\", restrained seal. Palette: river cyan, civic gray, white, safety orange. Avoid tourism river poster, cluttered map, generic blue waves, bureaucratic bulletin-board design."
+  },
+  {
+    "id": "15",
+    "theme": "东方字体设计展",
+    "title": "字场",
+    "archetype": "D04 Typography Campaign",
+    "preset": "F10 当代手写 · 实验",
+    "layout": "L11 超大标题 + 微型信息型",
+    "palette": "bone white, graphite black, acid yellow, seal red",
+    "output": "D:\\Codex_Outputs\\images\\chinese-style-poster-tests-round3-20260813\\chinese-style-poster-round3-15.png",
+    "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Oriental typography design exhibition / 东方字体设计展. Direction archetype: D04 Typography Campaign. Main title: \"字场\". Calligraphy preset: F10 contemporary handwritten experimental, stretched, cropped, designer-title feeling. Layout preset: L11 oversized title plus micro information; title is the whole campaign image. Translate the subject into abstract graphic elements: huge cropped Chinese strokes, baseline grid, movable-type blocks, typographic measurement marks, acid-yellow registration accent, tiny seal-red proof mark. Use bold but disciplined typography, strong negative space, refined Chinese microcopy, small English annotation \"TYPE FIELD\". Palette: bone white, graphite black, acid yellow, seal red. Avoid generic calligraphy poster, font specimen clutter, beige paper template, decorative cloud motifs."
+  }
+]

@@ -1,0 +1,190 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+
+OUT_DIR = Path(r"D:\Codex_Outputs\images\chinese-style-poster-tests-round2-20260813")
+JOBS = Path("chinese_style_poster_image2_jobs_round2.jsonl")
+MANIFEST = Path("chinese_style_poster_image2_manifest_round2.json")
+
+
+TESTS = [
+    {
+        "id": "01",
+        "theme": "龙泉青瓷",
+        "title": "青釉",
+        "preset": "F09 瘦劲 · 清雅",
+        "layout": "L03 中心圆相型",
+        "palette": "celadon green, porcelain white, pale gray, quiet brown",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Longquan celadon porcelain / 龙泉青瓷. Main title: \"青釉\". Calligraphy preset: F09 thin elegant elongated strokes, sparse, quiet, modern Oriental. Layout preset: L03 central circular form, a celadon bowl mouth as a soft circular anchor. Translate the subject into abstract graphic elements: translucent celadon glaze field, circular vessel rim, fine crackle lines, kiln ash specks, one quiet brown ceramic shadow. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"CELADON GLAZE\", restrained seal, premium porcelain-smooth paper texture, contemporary editorial composition. Palette: celadon green, porcelain white, pale gray, quiet brown. Avoid generic antique vase display, tourist souvenir style, excessive decoration, red-gold Chinese motifs.",
+    },
+    {
+        "id": "02",
+        "theme": "徽州马头墙",
+        "title": "墙影",
+        "preset": "F01 魏碑 · 雄浑",
+        "layout": "L05 现代分栏型",
+        "palette": "white wall, ink black, rain gray, pine green",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Huizhou horse-head walls / 徽州马头墙. Main title: \"墙影\". Calligraphy preset: F01 Wei tablet, square carved structural strokes, architectural weight. Layout preset: L05 modern columns, three vertical fields echoing stepped roof silhouettes. Translate the subject into abstract graphic elements: horse-head wall stepped contours, white wall planes, ink-black roof edges, rain-gray wash, a small pine-green accent. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"HUIZHOU WALL\", restrained seal, premium matte paper texture, contemporary editorial composition. Palette: white wall, ink black, rain gray, pine green. Avoid old-town tourist postcard, literal street scene, generic ink mountains, dirty antique paper.",
+    },
+    {
+        "id": "03",
+        "theme": "大运河",
+        "title": "水脉",
+        "preset": "F05 行书 · 洒脱",
+        "layout": "L02 横向题字型",
+        "palette": "canal blue, silt beige, brick red, ink gray",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Grand Canal cultural route / 大运河. Main title: \"水脉\". Calligraphy preset: F05 flowing running script, breathable and directional like water movement. Layout preset: L02 horizontal title across the upper field, long waterline graphic below. Translate the subject into abstract graphic elements: winding canal line, lock gate rectangles, silt texture, small brick-red dock mark, map-like coordinates. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"GRAND CANAL\", restrained seal, premium archival paper texture, contemporary editorial composition. Palette: canal blue, silt beige, brick red, ink gray. Avoid tourism map clutter, boat illustration cliches, excessive nostalgia, template layout.",
+    },
+    {
+        "id": "04",
+        "theme": "二十四节气白露",
+        "title": "白露",
+        "preset": "F02 汉隶 · 古拙",
+        "layout": "L08 下沉景观型",
+        "palette": "dew white, pale reed yellow, cool gray, light ink",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Bailu solar term / 二十四节气白露. Main title: \"白露\". Calligraphy preset: F02 Han clerical script, wide stable ancient feeling, quiet seasonal gravity. Layout preset: L08 sinking landscape, large cool upper negative space and minimal reeds below. Translate the subject into abstract graphic elements: dew dots as tiny glass beads, reed-line rhythm, early-autumn cool mist, a low horizon field. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"WHITE DEW\", restrained seal, premium clean rice-paper texture, contemporary editorial composition. Palette: dew white, pale reed yellow, cool gray, light ink. Avoid generic autumn leaves, heavy ink landscape, festival poster clutter, excessive beige.",
+    },
+    {
+        "id": "05",
+        "theme": "中医草药",
+        "title": "草木方",
+        "preset": "F02 汉隶 · 古拙",
+        "layout": "L06 拼贴档案型",
+        "palette": "herbal green, bone white, medicine paper yellow, dark umber",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Chinese herbal medicine archive / 中医草药. Main title: \"草木方\". Calligraphy preset: F02 Han clerical script, ancient, stable, apothecary tablet feeling. Layout preset: L06 collage archive with herb specimen blocks, small numbers, and paper labels. Translate the subject into abstract graphic elements: pressed herb silhouettes, prescription grid, medicine-paper strips, mortar curve, dark umber ink notes. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"HERBAL FORMULA\", restrained seal, premium clean archival paper texture, contemporary editorial composition. Palette: herbal green, bone white, medicine paper yellow, dark umber. Avoid pharmacy advertisement, excessive text density, fake antique stains, unrelated auspicious motifs.",
+    },
+    {
+        "id": "06",
+        "theme": "皮影戏",
+        "title": "影戏",
+        "preset": "F03 楷书 · 端正",
+        "layout": "L09 左右对景型",
+        "palette": "warm parchment, shadow black, lacquer red, muted ocher",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Chinese shadow puppetry / 皮影戏. Main title: \"影戏\". Calligraphy preset: F03 restrained regular script, readable and stage-formal. Layout preset: L09 left-right facing composition, typography on one side and abstract puppet shadow on the other. Translate the subject into abstract graphic elements: perforated puppet silhouette fragments, translucent warm screen, joint circles, shadow-black profile, restrained lacquer-red accent. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"SHADOW PLAY\", restrained seal, premium translucent paper texture, contemporary editorial composition. Palette: warm parchment, shadow black, lacquer red, muted ocher. Avoid cartoon puppet scene, theatrical clutter, over-bright folk colors, tourist souvenir style.",
+    },
+    {
+        "id": "07",
+        "theme": "汉代瓦当",
+        "title": "瓦纹",
+        "preset": "F08 篆意 · 古朴",
+        "layout": "L11 超大标题 + 微型信息型",
+        "palette": "clay gray, soot black, oxidized green, bone white",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Han dynasty roof-end tile / 汉代瓦当. Main title: \"瓦纹\". Calligraphy preset: F08 seal-inspired ancient pictographic feeling, rounded, archaic, graphic. Layout preset: L11 oversized title plus tiny museum annotations. Translate the subject into abstract graphic elements: circular tile-end imprint, radial border marks, weathered clay-gray relief texture, oxidized green mineral flecks, soot-black rubbed edge. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"HAN TILE\", restrained seal, premium museum paper texture, contemporary editorial composition. Palette: clay gray, soot black, oxidized green, bone white. Avoid fake relic dirt, copied museum catalog, excessive red seals, generic dragon motifs.",
+    },
+    {
+        "id": "08",
+        "theme": "大漆器物",
+        "title": "漆光",
+        "preset": "F07 枯笔 · 苍劲",
+        "layout": "L12 图形主导型",
+        "palette": "lacquer black, cinnabar red, deep brown, warm ivory",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Chinese lacquerware / 大漆器物. Main title: \"漆光\". Calligraphy preset: F07 dry brush, broken ink, tactile and time-worn but controlled. Layout preset: L12 graphic-led composition where a glossy lacquer surface becomes the main field. Translate the subject into abstract graphic elements: black lacquer reflection, cinnabar underlayer stripe, curved vessel edge, polished highlight, subtle carved texture. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"LACQUER LIGHT\", restrained seal, premium smooth paper texture, contemporary editorial composition. Palette: lacquer black, cinnabar red, deep brown, warm ivory. Avoid luxury gold excess, fake antique shine, product catalog layout, overdecorated Chinese patterns.",
+    },
+    {
+        "id": "09",
+        "theme": "侗族鼓楼",
+        "title": "木塔",
+        "preset": "F01 魏碑 · 雄浑",
+        "layout": "L01 纵向题字型",
+        "palette": "cedar brown, smoke gray, rice white, muted blue-green",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Dong ethnic drum tower / 侗族鼓楼. Main title: \"木塔\". Calligraphy preset: F01 Wei tablet, strong structural strokes, timber architecture feeling. Layout preset: L01 vertical title, main visual offset, strong negative space. Translate the subject into abstract graphic elements: stacked wooden eaves, octagonal tower rhythm, mortise-and-tenon linework, cedar-brown vertical grain, muted blue-green village-air accent. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"DRUM TOWER\", restrained seal, premium fibrous paper texture, contemporary editorial composition. Palette: cedar brown, smoke gray, rice white, muted blue-green. Avoid ethnic-tourism illustration, busy village scene, excessive ornaments, template-like layout.",
+    },
+    {
+        "id": "10",
+        "theme": "泉州海丝",
+        "title": "海丝",
+        "preset": "F05 行书 · 洒脱",
+        "layout": "L10 非对称实验型",
+        "palette": "harbor teal, sandstone, sail white, dark ink",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Quanzhou maritime silk road / 泉州海丝. Main title: \"海丝\". Calligraphy preset: F05 flowing running script, water-and-trade movement, controlled speed. Layout preset: L10 asymmetric experimental composition with cropped type and diagonal maritime routes. Translate the subject into abstract graphic elements: harbor teal route lines, sail-triangle fragments, stone dock blocks, compass arc, sandstone trade-map texture. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"MARITIME SILK ROAD\", restrained seal, premium matte paper texture, contemporary editorial composition. Palette: harbor teal, sandstone, sail white, dark ink. Avoid pirate or tourist port imagery, map clutter, excessive nautical symbols, generic red-gold Chinese styling.",
+    },
+    {
+        "id": "11",
+        "theme": "折扇与扇面",
+        "title": "开合",
+        "preset": "F04 行楷 · 文人",
+        "layout": "L12 图形主导型",
+        "palette": "fan paper white, bamboo tan, ink gray, faint plum red",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: folding fan and fan surface / 折扇与扇面. Main title: \"开合\". Calligraphy preset: F04 literati semi-cursive, refined and readable. Layout preset: L12 graphic-led composition, fan ribs and arcs dominate while title is secondary. Translate the subject into abstract graphic elements: radial fan ribs, semicircular paper field, bamboo hinge point, light ink wash, one faint plum-red accent. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"FOLDING FAN\", restrained seal, premium fan-paper texture, contemporary editorial composition. Palette: fan paper white, bamboo tan, ink gray, faint plum red. Avoid decorative fan shop poster, literal flower painting overload, excessive nostalgia, fixed template.",
+    },
+    {
+        "id": "12",
+        "theme": "宋代花笺",
+        "title": "花笺",
+        "preset": "F09 瘦劲 · 清雅",
+        "layout": "L02 横向题字型",
+        "palette": "powder pink, ink gray, warm white, pale leaf green",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Song dynasty floral letter paper / 宋代花笺. Main title: \"花笺\". Calligraphy preset: F09 thin elegant elongated strokes, sparse, quiet, poetic. Layout preset: L02 horizontal title in upper field with delicate paper pattern below. Translate the subject into abstract graphic elements: pale floral watermark, letter-paper grid, small folded edge, powder-pink block, fine leaf-green line. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"FLORAL LETTER PAPER\", restrained seal, premium soft paper texture, contemporary editorial composition. Palette: powder pink, ink gray, warm white, pale leaf green. Avoid cute stationery style, overfloral decoration, generic vintage postcard, dense text.",
+    },
+    {
+        "id": "13",
+        "theme": "瓷片修复",
+        "title": "补白",
+        "preset": "F10 当代手写 · 实验",
+        "layout": "L06 拼贴档案型",
+        "palette": "porcelain white, repair gold muted, cobalt fragment blue, ash gray",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: porcelain shard restoration / 瓷片修复. Main title: \"补白\". Calligraphy preset: F10 contemporary handwritten experimental, free structure with slight offsets. Layout preset: L06 collage archive, shard samples, restoration notes, and controlled negative space. Translate the subject into abstract graphic elements: porcelain shard fragments, thin repair seams in muted gold, cobalt-blue broken pattern, registration marks, ash-gray catalog labels. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"PORCELAIN RESTORATION\", restrained seal, premium museum paper texture, contemporary editorial composition. Palette: porcelain white, repair gold muted, cobalt fragment blue, ash gray. Avoid luxury gold glamour, messy broken plates, fake antique dirt, direct museum catalog copy.",
+    },
+    {
+        "id": "14",
+        "theme": "现代茶空间",
+        "title": "清坐",
+        "preset": "F09 瘦劲 · 清雅",
+        "layout": "L04 窗格 / 园林框景型",
+        "palette": "warm white, tea green, charcoal gray, light wood",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: contemporary tea space / 现代茶空间. Main title: \"清坐\". Calligraphy preset: F09 thin elegant elongated strokes, sparse, restrained, modern Oriental. Layout preset: L04 framed-view composition using window, screen, and low table geometry. Translate the subject into abstract graphic elements: rectangular screen frame, low tea table plane, quiet tea-green steam line, charcoal-gray shadow block, light-wood texture. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"TEA ROOM\", restrained seal, premium clean paper texture, contemporary editorial composition. Palette: warm white, tea green, charcoal gray, light wood. Avoid spa poster cliches, bamboo-and-lotus decoration, over-minimal blankness, generic beige.",
+    },
+    {
+        "id": "15",
+        "theme": "木版年画",
+        "title": "套色",
+        "preset": "F06 草书 · 狂放",
+        "layout": "L07 满版书法型",
+        "palette": "woodblock red, ink black, paper yellow, mineral blue",
+        "prompt": "Create a refined 3:4 contemporary Chinese / Oriental poster. Theme: Chinese woodblock New Year print color registration / 木版年画. Main title: \"套色\". Calligraphy preset: F06 bold cursive with energetic printmaking motion, strong but controlled. Layout preset: L07 full-page calligraphy where title and misregistered color blocks become the main visual. Translate the subject into abstract graphic elements: layered woodblock color plates, slight registration offset, carved grain, paper-yellow base, mineral-blue and woodblock-red blocks. Use generous negative space, clear visual hierarchy, refined Chinese typography, small English annotation \"WOODBLOCK COLOR\", restrained seal, premium hand-print paper texture, contemporary editorial composition. Palette: woodblock red, ink black, paper yellow, mineral blue. Avoid cheap festival poster, cartoon door gods, excessive red, crowded folk decoration.",
+    },
+]
+
+
+def main() -> int:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    jobs = []
+    manifest = []
+    for item in TESTS:
+        filename = f"chinese-style-poster-round2-{item['id']}.png"
+        jobs.append(
+            {
+                "prompt": item["prompt"],
+                "out": filename,
+                "size": "1024x1536",
+                "quality": "high",
+            }
+        )
+        manifest.append(
+            {
+                "id": item["id"],
+                "theme": item["theme"],
+                "title": item["title"],
+                "preset": item["preset"],
+                "layout": item["layout"],
+                "palette": item["palette"],
+                "output": str(OUT_DIR / filename),
+                "prompt": item["prompt"],
+            }
+        )
+
+    JOBS.write_text(
+        "\n".join(json.dumps(job, ensure_ascii=False) for job in jobs) + "\n",
+        encoding="utf-8",
+    )
+    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"jobs={JOBS.resolve()}")
+    print(f"manifest={MANIFEST.resolve()}")
+    print(f"out_dir={OUT_DIR}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

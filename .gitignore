@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+
+_export_stage/
+*.log
+
+.env
+.env.*
+!.env.example
+
+D:/Codex_Outputs/
+Codex_Outputs/
