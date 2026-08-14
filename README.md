@@ -18,7 +18,7 @@ $chinese-style-poster-skill
 - 一次先生成一个方向
 - 中文作为主文字，英文只做次级注释
 - 面向展览、文化品牌、博物馆、城市活动、工艺、茶、香、时尚和实验性东方视觉
-- 生成文件放入 `D:\Codex_Outputs\images`、`D:\Codex_Outputs\exports`、`D:\Codex_Outputs\drafts` 或 `D:\Codex_Outputs\temp`
+- 生成文件放入由 `CODEX_OUTPUT_ROOT` 指定的 `images`、`exports`、`drafts` 或 `temp` 子目录；未设置时使用项目内的 `outputs/`
 
 ## 视觉核心
 
@@ -167,7 +167,7 @@ python batch_generate_chinese_style_posters.py
 python retry_chinese_style_round3.py
 ```
 
-图像生成需要在环境变量中配置后端 API key。不要把 key 写入仓库、prompt、JSONL 或 README。
+图像生成需要在环境变量中配置后端 API key，并可通过 `MALIANG_IMAGE_SCRIPT` 指定图像生成脚本路径。不要把 key、个人路径或内部服务地址写入仓库、prompt、JSONL 或 README。
 
 ## 完整规则
 

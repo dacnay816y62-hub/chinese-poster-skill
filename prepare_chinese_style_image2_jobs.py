@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 from batch_generate_chinese_style_posters import TESTS
 
 
-OUT_DIR = Path(r"D:\Codex_Outputs\images\chinese-style-poster-tests-20260813")
+OUTPUT_ROOT = Path(os.getenv("CODEX_OUTPUT_ROOT", "outputs"))
+OUT_DIR = OUTPUT_ROOT / "images" / "chinese-style-poster-tests-20260813"
 JOBS = Path("chinese_style_poster_image2_jobs.jsonl")
 MANIFEST = Path("chinese_style_poster_image2_manifest.json")
 

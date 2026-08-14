@@ -14,7 +14,7 @@ Default output:
 - Use Chinese as the primary text language and English only as secondary visual annotation.
 - Aim for high-end cultural poster / exhibition poster quality.
 - Avoid template-like "beige paper + brush calligraphy + red seal" shortcuts.
-- When creating generated files, place images in `D:\Codex_Outputs\images`, final exports in `D:\Codex_Outputs\exports`, drafts in `D:\Codex_Outputs\drafts`, and temporary assets in `D:\Codex_Outputs\temp`.
+- When creating generated files, place images, exports, drafts, and temporary assets under the corresponding subdirectories of `CODEX_OUTPUT_ROOT`. If it is not set, use a local `outputs/` directory.
 
 ## Core Principle
 

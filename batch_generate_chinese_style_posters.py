@@ -1,13 +1,15 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
 
-SKILL_SCRIPT = Path(r"D:\Codex_Moved_From_C\.codex\skills\ML-img\scripts\generate_image.py")
-OUT_DIR = Path(r"D:\Codex_Outputs\images\chinese-style-poster-tests-20260813")
+SKILL_SCRIPT = Path(os.getenv("MALIANG_IMAGE_SCRIPT", "generate_image.py"))
+OUTPUT_ROOT = Path(os.getenv("CODEX_OUTPUT_ROOT", "outputs"))
+OUT_DIR = OUTPUT_ROOT / "images" / "chinese-style-poster-tests-20260813"
 MANIFEST = OUT_DIR / "manifest.json"
 
 
