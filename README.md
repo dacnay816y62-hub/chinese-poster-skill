@@ -6,11 +6,15 @@
 
 ## 快速开始
 
-在支持 Codex Skill 的环境中调用：
+在支持 Skill 的宿主环境中调用：
 
 ```text
 $chinese-style-poster-skill
 ```
+
+这是一个与后端无关的视觉方向和提示词 Skill，可用于 Codex、ChatGPT、API 或其他支持图像生成的宿主。
+
+在 Codex 中，直接使用内置的 **Imagen v2** 生成图像，不需要额外 API key，也不需要安装外部图像服务。仓库中的 Python 批处理脚本是可选工具，只用于需要批量生成、JSONL 任务或自定义外部后端的场景。
 
 默认行为：
 
@@ -167,7 +171,7 @@ python batch_generate_chinese_style_posters.py
 python retry_chinese_style_round3.py
 ```
 
-图像生成需要在环境变量中配置后端 API key，并可通过 `MALIANG_IMAGE_SCRIPT` 指定图像生成脚本路径。不要把 key、个人路径或内部服务地址写入仓库、prompt、JSONL 或 README。
+使用宿主自带的图像能力时，不需要额外配置 API key。只有在主动运行可选 Python 批处理脚本并连接外部后端时，才需要按该后端的规则配置凭据，并可通过 `MALIANG_IMAGE_SCRIPT` 指定脚本路径。不要把 key、个人路径或内部服务地址写入仓库、prompt、JSONL 或 README。
 
 ## 完整规则
 

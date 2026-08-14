@@ -7,6 +7,14 @@ description: Create refined contemporary Chinese-style / Oriental aesthetic post
 
 Use this skill to translate a user-provided subject, copy, image, cultural object, place, event, or brand idea into a refined 3:4 contemporary Chinese / Oriental poster direction or image-generation prompt.
 
+## Host And Image Backend
+
+This skill is host-agnostic. It can be used in Codex, ChatGPT, API workflows, or another host that supports image generation.
+
+- In Codex, use the built-in Imagen v2 image capability directly. No separate API key or external image service is required.
+- In ChatGPT or another image-capable host, use that host's native image workflow.
+- The Python batch scripts in this repository are optional utilities for JSONL jobs, contact sheets, and custom external backends. Their backend credentials are not a requirement of this skill.
+
 Default output:
 
 - Use a 3:4 vertical poster unless the user specifies another ratio.
